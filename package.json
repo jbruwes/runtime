@@ -22,7 +22,8 @@
   ],
   "scripts": {
     "build": "vue-tsc && vite build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "vue-tsc && vite build"
   },
   "prettier": "@vuebro/configs/prettierrc",
   "dependencies": {
@@ -30,8 +31,8 @@
     "@iconify/vue": "^5.0.0",
     "@unhead/vue": "^2.0.19",
     "@unocss/runtime": "^66.5.4",
-    "@vuebro/loader-sfc": "^2.3.22",
-    "@vuebro/shared": "^1.1.50",
+    "@vuebro/loader-sfc": "jbruwes/loader-sfc",
+    "@vuebro/shared": "jbruwes/shared",
     "@vueuse/components": "^14.0.0",
     "@vueuse/core": "^14.0.0",
     "consola": "^3.4.2",
@@ -42,7 +43,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.0",
-    "@vuebro/configs": "^1.1.60",
+    "@vuebro/configs": "jbruwes/configs",
     "eslint": "^9.39.1",
     "unocss": "^66.5.4",
     "vite": "^7.1.12",
